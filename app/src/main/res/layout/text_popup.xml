@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF0E6"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/enterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        android:hint="Enter a message (letters/numbers)"
+        android:textColorHint="@color/gray"
+        android:paddingTop="8dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterText"
+        android:layout_toStartOf="@+id/enterButton"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/enterText"
+        android:layout_below="@+id/enterText"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:text="Enter" />
+
+</RelativeLayout>
